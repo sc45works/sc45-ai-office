@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Office hero: demo</title>
+    <style>
+      body { margin: 0; background: #07070b; color: #fff; font: 16px/1.5 system-ui, sans-serif; }
+      #hero { position: relative; height: 100svh; overflow: hidden; }
+      #hero .stage { position: absolute; inset: 0; }
+      #hero .scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4,4,8,.72), rgba(4,4,8,.35) 45%, rgba(4,4,8,0) 75%); pointer-events: none; }
+      #hero .words { position: relative; height: 100%; display: grid; align-content: center; padding: 0 max(24px, 7vw); max-width: 34rem; }
+      h1 { font-size: clamp(36px, 6vw, 76px); line-height: 1.02; margin: 0 0 16px; }
+      p { margin: 0; color: #c9c9d4; }
+    </style>
+  </head>
+  <body>
+    <!-- Serve this folder over http (for example `npx serve`) and open demo.html: a module cannot be loaded from a file:// page. -->
+    <section id="hero">
+      <div class="stage"></div>
+      <div class="scrim"></div>
+      <div class="words">
+        <h1>Solo Creator.<br />Solo Creative.</h1>
+        <p>One founder and sixteen AI agents, building websites by the sea.</p>
+      </div>
+    </section>
+    <script type="module">
+      import { mountOfficeHero } from './office-hero.standalone.js';
+      const query = new URLSearchParams(location.search);
+      window.hero = mountOfficeHero(document.querySelector('#hero .stage'), { sky: query.get('sky') ?? 'auto', offset: { x: 0.16 }, zoom: Number(query.get('zoom')) || 1 });
+    </script>
+  </body>
+</html>

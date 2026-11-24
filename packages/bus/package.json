@@ -1,0 +1,13 @@
+{
+  "name": "@sc45/bus",
+  "version": "0.3.0",
+  "private": true,
+  "description": "The event bus: an append-only JSON-lines file.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@sc45/shared": "workspace:*"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@sc45/shared",
+  "version": "0.3.0",
+  "private": true,
+  "description": "The contract every layer imports: events, roster, state.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

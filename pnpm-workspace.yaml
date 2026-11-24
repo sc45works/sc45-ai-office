@@ -1,0 +1,6 @@
+packages:
+  - 'packages/*'
+
+# esbuild (used by Vite and tsx) is the only dependency allowed to run an install script.
+onlyBuiltDependencies:
+  - esbuild

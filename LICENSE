@@ -1,0 +1,28 @@
+SC45WORKS Proprietary Licence
+
+Copyright (c) 2026 SC45WORKS (Stephen Lee). All rights reserved.
+
+This repository is published as a portfolio piece. The source code, designs, text, images and
+other materials in it ("the Work") are the property of SC45WORKS and are for SC45WORKS's own use.
+
+You may view the Work, and run it on your own machine, for the sole purpose of evaluating it.
+
+Without prior written permission from SC45WORKS you may not:
+
+  - copy, modify, merge, publish, distribute, sublicense or sell the Work or any part of it;
+  - use the Work or any part of it in another project, product or service, commercial or not;
+  - use the SC45WORKS name, logo or branding.
+
+No licence or other right is granted by implication. The Work is provided "as is", without
+warranty of any kind, and SC45WORKS accepts no liability for any use of it.
+
+Permission requests: https://sc45works.com
+
+Third-party software
+
+The Work depends on open-source software that remains under its own licences, including
+three.js (MIT), Hono (MIT), Vite (MIT) and TypeScript (Apache-2.0). The file
+hero/office-hero/office-hero.standalone.js includes a built copy of three.js,
+Copyright (c) three.js authors, used under the MIT licence
+(https://github.com/mrdoob/three.js/blob/dev/LICENSE). The tour's title uses the typeface
+Mr Dafoe, served by Google Fonts under the SIL Open Font Licence.

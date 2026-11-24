@@ -1,0 +1,23 @@
+{
+  "name": "@sc45/office",
+  "private": true,
+  "version": "0.3.0",
+  "description": "The 3D office: renders the event stream.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "build:hero": "vite build -c vite.hero.config.ts --mode shared && vite build -c vite.hero.config.ts --mode standalone && node -e \"for (const f of ['office-hero.js','office-hero.standalone.js']) require('node:fs').copyFileSync('dist-hero/'+f,'../../hero/office-hero/'+f)\""
+  },
+  "dependencies": {
+    "@sc45/shared": "workspace:*",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.187.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
